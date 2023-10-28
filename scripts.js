@@ -10,13 +10,34 @@ const output = document.getElementById('output');
 const alphabet = 'RZKTFXEUGHMIJLPNBOCSVWYAQD';
 const incorrectAlphabet = 'XZABCEGTHIJLWNOPQRSDYUVMFK';
 
-for (let i = 0; i < alphabet.length; i++) {
+for (let i = 0; i < alphabet.length; i++) 
+{
     const letterDiv = document.createElement('div');
     letterDiv.textContent = alphabet[i];
     letterDiv.className = 'letter';
     lettersDiv.appendChild(letterDiv);
 
-    letterDiv.addEventListener('click', () => {
+    letterDiv.addEventListener('click', () => 
+    {
         output.textContent += incorrectAlphabet[i];
     });
+
+    enter.addEventListener('click', () => {
+        if (output.textContent === 'BOTTLE') {
+            window.location.href = 'accessed.html';
+        } else {
+            output.textContent = '';
+        }
+    });
+}
+
+function checkAnswer(imageId) 
+{
+    if (imageId === 'image1') 
+    { 
+        alert("Correct! This is the cat.");
+    } else 
+    {
+        alert("Incorrect! This is not the cat.");
+    }
 }

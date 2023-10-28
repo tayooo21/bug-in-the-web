@@ -5,3 +5,32 @@ body
     overflow: hidden;
     transition: background 0.5s;
 }
+
+#letters 
+{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 25px;
+    background-color: white;
+}
+
+.letter 
+{
+    margin: 10px;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+#output 
+{
+    text-align: center;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 50px;
+    font-size: 2em;
+    background-color: white;
+}

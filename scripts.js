@@ -21,23 +21,28 @@ for (let i = 0; i < alphabet.length; i++)
     {
         output.textContent += incorrectAlphabet[i];
     });
-
-    enter.addEventListener('click', () => {
-        if (output.textContent === 'BOTTLE') {
-            window.location.href = 'accessed.html';
-        } else {
-            output.textContent = '';
-        }
-    });
 }
+
+let imageSelected = false;
 
 function checkAnswer(imageId) 
 {
     if (imageId === 'image1') 
     { 
         alert("Correct! This is the cat.");
+        imageSelected = true;
     } else 
     {
         alert("Incorrect! This is not the cat.");
+        imageSelected = false;
     }
 }
+
+enter.addEventListener('click', () => {
+    if (output.textContent === 'BOTTLE' && imageSelected) {
+        window.location.href = 'accessed.html';
+    } else {
+        output.textContent = '';
+        imageSelected = false;
+    }
+});

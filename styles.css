@@ -6,6 +6,22 @@ body
     transition: background 0.5s;
 }
 
+#riddle
+{
+    display: flex;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 25px;
+}
+
+#guessImage
+{
+    display: flex;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 25px;
+}
+
 #letters 
 {
     display: flex;
@@ -14,7 +30,6 @@ body
     flex-wrap: wrap;
     margin-left: 25px;
     margin-right: 25px;
-    margin-top: 25px;
     background-color: white;
 }
 
@@ -33,4 +48,33 @@ body
     margin-bottom: 50px;
     font-size: 2em;
     background-color: white;
+}
+
+#enter 
+{
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin: 10px auto;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+#images 
+{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: white;
+}
+
+img 
+{
+    width: 200px;
+    height: 200px;
 }

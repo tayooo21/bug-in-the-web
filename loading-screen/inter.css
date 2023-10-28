@@ -1,0 +1,64 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #a2c8b6;
+}
+#text1{
+    font-size: 50px;
+    position: absolute;
+    opacity: 0;
+    left: 12em;
+    top: 18em;
+}
+#text2{
+    font-size: 50px;
+    position: absolute;
+    opacity: 0;
+    left: 12em;
+    top: 18em;
+}
+#text3{
+    font-size: 50px;
+    position: absolute;
+    opacity: 0;
+    left: 12em;
+    top: 18em;
+}
+#text4{
+    font-size: 50px;
+    position: absolute;
+    opacity: 0;
+    left: 12em;
+    top: 18em;
+}
+
+.progress-bar {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: auto;
+    position: relative;
+    top: 20em;
+    width: 700px;
+    height: 3em;
+    background-color: #111;
+    border-radius: 1.5em;
+    color:white;
+}
+
+.progress-bar::before {
+    content: attr(data-label);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: .5em;
+    top: .5em;
+    bottom: .5em;
+    width: calc(var(--width,0)*1%);
+    min-width: 2rem;
+    max-width: calc(100% - 1em);
+    background-color: #2a624c;
+    border-radius: 1em;
+    padding: 1em;
+}

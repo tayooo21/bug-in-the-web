@@ -23,6 +23,16 @@ for (let i = 0; i < alphabet.length; i++)
     });
 }
 
+const backspaceDiv = document.createElement('div');
+backspaceDiv.textContent = 'BACK';
+backspaceDiv.className = 'letter';
+lettersDiv.appendChild(backspaceDiv);
+
+backspaceDiv.addEventListener('click', () => 
+{
+    output.textContent = output.textContent.slice(0, -1);
+});
+
 let imageSelected = false;
 
 function checkAnswer(imageId) 

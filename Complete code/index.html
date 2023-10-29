@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="styles.css" />
+        <title>Annoying Website</title>
+    </head>
+    <body>
+        <h1 id="guessImage">Which of these images is a cat?</h1>
+        <div id="images">
+            <img id="image1" alt="Guinea pig" src="./guineaPig.png" onclick="checkAnswer('image1')">
+            <img id="image2" alt="Cat" src="./cat.png" onclick="checkAnswer('image2')">
+        </div>
+        <h1 id="riddle">What has a neck, but no head?</h1>
+        <!--Alphabet will be shown, that is, in a random order-->
+        <div id="letters"></div>
+        <!--Whichever letters the user selects will be shown within output-->
+        <div id="output"></div> 
+        <!--Once the user has input each letter, they will interact with this
+        This will be clickable, and if conditions are met, the user will be brought to next page-->
+        <div id="enter">ENTER</div> 
+
+    </body>
+    <a id="next" href="../Captcha/index.html" >next</a>
+
+    <script src="./scripts.js"></script>
+</html>
